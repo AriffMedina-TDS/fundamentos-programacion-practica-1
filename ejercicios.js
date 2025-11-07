@@ -92,7 +92,14 @@ function parOImpar(numero) {
  */
 function evaluarNota(nota) {
   // TODO: Implementa la lÃ³gica con if/else
-  return "";
+    let estado;
+    if (nota>=60){
+      estado = "Aprobado"
+    }
+    else{
+      estado = "Reprobado"
+    }
+  return estado;
 }
 
 /**
