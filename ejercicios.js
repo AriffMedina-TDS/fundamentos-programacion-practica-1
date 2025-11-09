@@ -255,7 +255,7 @@ function promedioArray(numeros) {
  */
 function encontrarMaximo(numeros) {
   //Método para devolver el máximo del arreglo con ... para mandarlo como una lista de argumentos
-  return Math.max(...numeros); 
+  return Math.max(...numeros);
 }
 
 /**
@@ -266,8 +266,12 @@ function encontrarMaximo(numeros) {
  * Ejemplo: filtrarMayores([1, 5, 3, 8, 2], 4) debe retornar [5, 8]
  */
 function filtrarMayores(numeros, limite) {
-  // TODO: Crea un nuevo array con solo los nÃºmeros mayores al lÃ­mite
   const mayores = [];
+  for (let i = 0; i < numeros.length; i++) {
+    if (numeros[i] > limite) { // Si el número es mayor al límite se agrega
+      mayores.push(numeros[i]);
+    }
+  }
   return mayores;
 }
 
