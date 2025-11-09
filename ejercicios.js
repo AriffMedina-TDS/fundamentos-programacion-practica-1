@@ -282,8 +282,6 @@ function filtrarMayores(numeros, limite) {
  * Ejemplo: invertirArray([1, 2, 3, 4]) debe retornar [4, 3, 2, 1]
  */
 function invertirArray(arr) {
-  // TODO: Invierte el orden de los elementos
-  // Pista: Puedes usar arr.reverse() o hacerlo manualmente
   const invertido = [];
   for (let i = arr.length - 1; i >= 0; i--) { // Recorre el arreglo desde el final hasta el inicio
     invertido.push(arr[i]);
@@ -305,8 +303,10 @@ function invertirArray(arr) {
  * Ejemplo: crearMatriz(2, 3) debe retornar [[0, 0, 0], [0, 0, 0]]
  */
 function crearMatriz(filas, columnas) {
-  // TODO: Crea una matriz de filas x columnas llena de ceros
   const matriz = [];
+  for (let i = 0; i < filas; i++) { 
+    matriz.push(new Array(columnas).fill(0)); // Crea la fila usando 0 como columnas
+  }
   return matriz;
 }
 
